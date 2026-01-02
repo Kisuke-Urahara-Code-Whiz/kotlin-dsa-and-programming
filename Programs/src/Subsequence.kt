@@ -3,7 +3,7 @@ fun main() {
     val size: Int = readln().toInt()
     val arr = IntArray(size)
     for(i in 0..<size){
-        println("Enter element $i")
+        println("Enter element $i :")
         arr[i] = readln().toInt()
     }
     println("Array ->\n${arr.contentToString()}")
