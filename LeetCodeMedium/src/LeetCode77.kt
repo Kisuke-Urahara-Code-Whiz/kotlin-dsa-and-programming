@@ -4,7 +4,11 @@ class LeetCode77 {
 
     fun combine(n: Int, k: Int): List<List<Int>> {
         val temp: ArrayList<Int> = ArrayList()
-        combinate(temp, n, k, 1)
+        for(i in 1..n) {
+            temp.add(i)
+            combinate(temp, n, k-1, i+1)
+            temp.removeLast()
+        }
         return result
     }
 
